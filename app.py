@@ -14,7 +14,7 @@ if button_clicked:
     data = np.random.rand(5)
     fig, ax = plt.subplots()
     ax.pie(data, labels=[f'x{i}' for i in range(1, 6)])
-    st.pyplot(fig)
+    #st.pyplot(fig)
 
     # Set the width of the chart to fit the screen
     st.set_option('deprecation.showPyplotGlobalUse', False)
