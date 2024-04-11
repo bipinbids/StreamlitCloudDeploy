@@ -6,7 +6,7 @@ import pandas as pd
 button_clicked = False
 
 if not button_clicked:
-    st.write("Personalized Dashboard containing the most Important data goes here")
+    st.title("Personalized Dashboard containing the most Important data goes here")
 
 
 # Add a title to the sidebar
