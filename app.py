@@ -3,7 +3,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-st.write("Personalized Dashboard containing the most Important data goes here")
+button_clicked = False
+
+if not button_clicked:
+    st.write("Personalized Dashboard containing the most Important data goes here")
 
 
 # Add a title to the sidebar
@@ -15,6 +18,7 @@ Bar_button_clicked = st.sidebar.button('Bar Chart')
 
 # Display a pie chart when the button is clicked
 if Pie_button_clicked:
+    button_clicked = True
     st.write('There could be text here which talks about the Pie Chart below')
     data = np.random.rand(5)
     fig, ax = plt.subplots()
@@ -27,6 +31,7 @@ if Pie_button_clicked:
 
 
 if Bar_button_clicked:
+    button_clicked = True
     st.write('There could be text here which talks about the bar chart below')
 
     
