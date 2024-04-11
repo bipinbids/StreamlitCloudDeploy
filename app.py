@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Add a title to the sidebar
-st.sidebar.title('Sidebar Title')
+st.sidebar.title('Various Kinds Of Analytics')
 
 # Add a button to the sidebar
 Pie_button_clicked = st.sidebar.button('Pie Chart')
