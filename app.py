@@ -12,5 +12,6 @@ button_clicked = st.sidebar.button('Show Pie Chart')
 if button_clicked:
     st.write('Pie Chart:')
     data = np.random.rand(5)
-    plt.pie(data, labels=[f'x{i}' for i in range(1, 6)])
-    st.pyplot(plt)
+    fig, ax = plt.subplots(figsize=(6, 6))
+    ax.pie(data, labels=[f'x{i}' for i in range(1, 6)])
+    st.pyplot(fig)
