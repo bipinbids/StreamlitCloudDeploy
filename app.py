@@ -6,8 +6,6 @@ import pandas as pd
 if 'button_clicked' not in st.session_state:
     st.session_state['button_clicked'] = False
 
-if not st.session_state.button_clicked:
-    #st.write("Personalized Dashboard containing the most Important data goes here")
 
 
 # Add a title to the sidebar
