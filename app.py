@@ -1,6 +1,9 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+
+
 
 # Add a title to the sidebar
 st.sidebar.title('Various Kinds Of Analytics')
@@ -31,6 +34,10 @@ if Bar_button_clicked:
     fig, ax = plt.subplots()
     ax.bar(labels, data)
     #st.pyplot(fig)
+
+    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+
+    st.bar_chart(chart_data)
 
     # Set the width of the chart to fit the screen
     st.set_option('deprecation.showPyplotGlobalUse', False)
