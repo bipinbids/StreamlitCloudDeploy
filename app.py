@@ -35,10 +35,6 @@ if Bar_button_clicked:
     ax.bar(labels, data)
     #st.pyplot(fig)
 
-    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
-
-    st.bar_chart(chart_data)
-
     # Set the width of the chart to fit the screen
     st.set_option('deprecation.showPyplotGlobalUse', False)
     st.pyplot(fig, clear_figure=True)
