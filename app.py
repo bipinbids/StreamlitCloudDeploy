@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+st.write("Personalized Dashboard Containing the most Important data goes here")
 
 
 # Add a title to the sidebar
